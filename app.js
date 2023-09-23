@@ -1,4 +1,5 @@
-const playerSelection = prompt("Please choose between Rock , Paper , Scissors");
+let playerSelection = prompt("Please choose between Rock , Paper , Scissors");
+let toLowerCase = playerSelection.toLowerCase();
 
 //computer selection
 let computerSelection = Math.random();
@@ -9,7 +10,6 @@ if (computerSelection <= 0.3333) {
 } else {
   computerSelection = "scissors";
 }
-
 //compare function;
 
 function compare(player, computer) {
@@ -32,6 +32,6 @@ function compare(player, computer) {
   }
 }
 
-let result = compare(playerSelection, computerSelection);
+let result = compare(toLowerCase, computerSelection);
 
-console.log(playerSelection + " vs " + computerSelection, result);
+console.log(toLowerCase + " vs " + computerSelection, result);
