@@ -30,19 +30,21 @@ for (let round = 1; round <= 5; round++) {
     }
 
     let result = compare(toLowerCase, computerSelection);
-    console.log();
     document.getElementById("result").textContent = `${result}`;
     document.getElementById(
       "score"
     ).textContent = `${playerPoints} : ${computerPoints}`;
   }
 }
-document
+
+let btn = document
   .getElementById("rock")
   .addEventListener("click", () => playRound("Rock"));
-document
+btn = document
   .getElementById("paper")
   .addEventListener("click", () => playRound("Paper"));
-document
+btn = document
   .getElementById("scissors")
   .addEventListener("click", () => playRound("Scissors"));
+
+btn.addEventListener("click", function onClick() {});

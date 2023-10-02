@@ -72,3 +72,37 @@ h1 {
   width: 311px;
   height: 119px;
 }
+
+.result-p {
+  font-size: 38px;
+  font-weight: 500;
+  color: #1e043e;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+button {
+  width: 150px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 0.59);
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  background: rgba(255, 0, 0, 0.11);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+}
