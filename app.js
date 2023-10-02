@@ -1,10 +1,10 @@
 let playerPoints = 0;
 let computerPoints = 0;
-for (let round = 1; round <= 5; round++) {
-  let playerSelection = prompt("Please choose between Rock , Paper , Scissors");
-  let toLowerCase = playerSelection.toLowerCase();
 
+function playRound(playerSelection) {
+  let toLowerCase = playerSelection.toLowerCase();
   let computerSelection = Math.random();
+
   if (computerSelection <= 0.3333) {
     computerSelection = "rock";
   } else if (computerSelection > 0.3333 && computerSelection < 0.6666) {
@@ -12,6 +12,7 @@ for (let round = 1; round <= 5; round++) {
   } else {
     computerSelection = "scissors";
   }
+
   function compare(player, computer) {
     if (player === computer) {
       return "Draw!";
@@ -27,11 +28,20 @@ for (let round = 1; round <= 5; round++) {
       return "Computer wins!";
     }
   }
-  let result = compare(toLowerCase, computerSelection);
-  console.log(`${toLowerCase} vs ${computerSelection}: ${result}`);
-}
 
-console.log("Game Over!");
-console.log(
-  `Final Score - Player: ${playerPoints} - Computer: ${computerPoints}`
-);
+  let result = compare(toLowerCase, computerSelection);
+  console.log();
+  document.getElementById("result").textContent = `Result ${result}`;
+  document.getElementById(
+    "score"
+  ).textContent = `Score: ${playerPoints} vs ${computerPoints}`;
+}
+document
+  .getElementById("rock")
+  .addEventListener("click", () => playRound("Rock"));
+document
+  .getElementById("paper")
+  .addEventListener("click", () => playRound("Paper"));
+document
+  .getElementById("scissors")
+  .addEventListener("click", () => playRound("Scissors"));
