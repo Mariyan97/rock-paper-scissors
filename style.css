@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ruda", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("/Images/Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 84px;
+  color: #fff3fa;
+  font-weight: 600;
+}
+h1 {
+  font-size: 64px;
+  color: #1e043e;
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0px;
+  gap: 48px;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.player,
+.computer {
+  font-size: 38px;
+  color: #fff3fa;
+  background-color: #1e043e;
+  width: 230px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.score-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 84px;
+  color: #fff3fa;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 0.59);
+  width: 311px;
+  height: 119px;
+}
