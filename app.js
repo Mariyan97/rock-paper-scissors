@@ -46,5 +46,3 @@ btn = document
 btn = document
   .getElementById("scissors")
   .addEventListener("click", () => playRound("Scissors"));
-
-btn.addEventListener("click", function onClick() {});
