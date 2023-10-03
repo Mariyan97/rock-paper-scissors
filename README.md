@@ -12,7 +12,7 @@ Change the way winner gets displayed after round of win inside the HTML // Done!
 
 Fourth phace of the game:
 Stylize the game in css. // Done!
-Create restarting button of the game.
+Create restarting button of the game. //
 
 Fifth phace of the game:
 Create the loop for only 5 rounds , after this player can't play more , until he press the restart button.

@@ -36,6 +36,15 @@ for (let round = 1; round <= 5; round++) {
     ).textContent = `${playerPoints} : ${computerPoints}`;
   }
 }
+//Restart button
+
+document.getElementById("restart").addEventListener("click", function () {
+  let restart = (playerPoints = 0) + (computerPoints = 0);
+  let restartScore = (document.getElementById("score").textContent = "0 : 0");
+  let restartRelust = (document.getElementById("result").textContent = "");
+});
+
+//Button Selectors
 
 let btn = document
   .getElementById("rock")
