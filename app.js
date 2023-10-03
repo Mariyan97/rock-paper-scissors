@@ -1,5 +1,6 @@
 let playerPoints = 0;
 let computerPoints = 0;
+
 for (let round = 1; round <= 5; round++) {
   function playRound(playerSelection) {
     let toLowerCase = playerSelection.toLowerCase();
@@ -12,6 +13,16 @@ for (let round = 1; round <= 5; round++) {
     } else {
       computerSelection = "scissors";
     }
+
+    //Rounds of the game !
+
+    if (playerPoints == 5 && computerPoints < 5) {
+      document.getElementById("result").textContent = `${result}`;
+    } else if (playerPoints < 5 && computerPoints == 5) {
+      document.getElementById("result").textContent = `${result}`;
+    }
+
+    //Comparing the results between Player and the Computer!
 
     function compare(player, computer) {
       if (player === computer) {
@@ -28,12 +39,11 @@ for (let round = 1; round <= 5; round++) {
         return "Computer wins!";
       }
     }
-
     let result = compare(toLowerCase, computerSelection);
-    document.getElementById("result").textContent = `${result}`;
     document.getElementById(
       "score"
     ).textContent = `${playerPoints} : ${computerPoints}`;
+    document.getElementById("result").textContent = `${result}`;
   }
 }
 

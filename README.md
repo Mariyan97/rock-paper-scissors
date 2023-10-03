@@ -15,5 +15,6 @@ Stylize the game in css. // Done!
 Create restarting button of the game. // Done!
 
 Fifth phace of the game:
-Create the loop for only 5 rounds , after this player can't play more , until he press the restart button.
-Make differend game levels , where you can choose from 5, 10 or 20 rounds.
+Create a rule , who first goes to 5 points , wins the game. // Done!
+
+Make differend game levels , where you can choose from 5, 10 or 20 points.
